@@ -55,6 +55,14 @@ stages:
       - npm
 
     steps:
+    - task: UseDotNet@2
+      inputs:
+        packageType: 'sdk'
+        useGlobalJson: true
+
+    - script: dotnet build --configuration $(buildConfiguration)
+      displayName: 'dotnet build $(buildConfiguration)'
+      
     - task: DotNetCoreCLI@2
       displayName: 'Run application unit tests'
       inputs:

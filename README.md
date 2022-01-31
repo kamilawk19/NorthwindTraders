@@ -1,4 +1,4 @@
-[![Build Status](https://codingflow.visualstudio.com/NorthwindTraders/_apis/build/status/NorthwindTraders%20-%20CI?branchName=master)](https://codingflow.visualstudio.com/NorthwindTraders/_build/latest?definitionId=22&branchName=master)
+[![Build Status](https://dev.azure.com/kk46569/NorthwindTraders/_apis/build/status/kamilawk19.NorthwindTraders?branchName=master)](https://dev.azure.com/kk46569/NorthwindTraders/_build/latest?definitionId=25&branchName=master)
 
 # NorthwindTraders
 

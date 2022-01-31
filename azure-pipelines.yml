@@ -37,6 +37,14 @@ stages:
         projects: 'Src/WebUI/WebUI.csproj'
         arguments: '--self-contained --runtime win-x86 --configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)'
         zipAfterPublish: True
+    
+    - task: DotNetCoreCLI@2
+      displayName: 'Run tests'
+      inputs:
+        command: test
+        arguments: --configuration $(buildConfiguration)
+        publishTestResults: true
+        projects: 'Tests/Application.UnitTests/*.csproj'
 
     - task: PublishBuildArtifacts@1
       displayName: 'Publish Artifact'
